@@ -17,7 +17,7 @@ For the Qualcomm QCLinux platform, we provide two ways to build this package.
 
     ```bash
     cd ~/qrb_ros_ws/src/qrb_ros_docker/scripts && \
-    bash docker_run.sh
+    bash docker_run_qclinux.sh
 
     git clone https://github.com/qualcomm-qrb-ros/qrb_ros_system_monitor.git
     colcon build
