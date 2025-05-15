@@ -16,9 +16,6 @@ For the Qualcomm QCLinux platform, we provide two ways to build this package.
 2. Clone and build the source code:
 
     ```bash
-    cd ~/qrb_ros_ws/src/qrb_ros_docker/scripts && \
-    bash docker_run_qclinux.sh
-
     git clone https://github.com/qualcomm-qrb-ros/qrb_ros_system_monitor.git
     colcon build
     ```
@@ -48,13 +45,7 @@ For the Qualcomm QCLinux platform, we provide two ways to build this package.
 3. Build the source code with QIRP SDK:
 
     ```bash
-    colcon build --merge-install --cmake-args \
-      -DPYTHON_EXECUTABLE=${OECORE_NATIVE_SYSROOT}/usr/bin/python3 \
-      -DPython3_NumPy_INCLUDE_DIR=${OECORE_NATIVE_SYSROOT}/usr/lib/python3.12/site-packages/numpy/core/include \
-      -DPYTHON_SOABI=cpython-312-aarch64-linux-gnu \
-      -DCMAKE_MAKE_PROGRAM=/usr/bin/make \
-      -DCMAKE_LIBRARY_PATH=${OECORE_TARGET_SYSROOT}/usr/lib \
-      -DBUILD_TESTING=OFF
+    colcon build --merge-install --cmake-args ${CMAKE_ARGS}
     ```
 
 4. Install ROS package to device
