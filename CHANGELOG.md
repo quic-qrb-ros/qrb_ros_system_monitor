@@ -1,8 +1,8 @@
 # Changelog for package qrb_ros_system_monitor
 
-## 1.1.0-jazzy-rc0 (2025-04-06)
+## 1.1.0-jazzy (2025-05-19)
 
-- Add GitHub actions CI checker ([#5](https://github.com/qualcomm-qrb-ros/qrb_ros_system_monitor/pull/5))
+- Add QIRP SDK build checker ([#5](https://github.com/qualcomm-qrb-ros/qrb_ros_system_monitor/pull/5))
 - Fix battery monitor sysfs not found ([#3](https://github.com/qualcomm-qrb-ros/qrb_ros_system_monitor/pull/3))
 - Contributors: Peng Wang, Jiaxing Shi, Zhaoyuan Cheng
 
