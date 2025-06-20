@@ -9,7 +9,28 @@
 For the Qualcomm QCLinux platform, we provide two ways to build this package.
 
 <details>
-<summary>On-Device Compilation with Docker</summary>
+<summary>Start with Qualcomm Ubuntu</summary>
+
+1. Install Ubuntu on Qualcomm IoT Platforms: [Ubuntu for Qualcomm](https://ubuntu.com/download/qualcomm-iot).
+
+2. Clone and build the source code:
+
+    ```bash
+    git clone https://github.com/qualcomm-qrb-ros/qrb_ros_system_monitor.git
+    colcon build
+    ```
+
+3. Run ROS node
+
+   ```bash
+   source install/setup.bash
+   ros2 run qrb_ros_system_monitor qrb_ros_system_monitor
+   ```
+
+</details>
+
+<details>
+<summary>Start with QRB ROS Docker</summary>
 
 1. Set up the QCLinux Docker environment following the [QRB ROS Docker Setup](https://github.com/qualcomm-qrb-ros/qrb_ros_docker?tab=readme-ov-file#quickstart).
 
@@ -29,7 +50,7 @@ For the Qualcomm QCLinux platform, we provide two ways to build this package.
 
 </details>
 
-<details><summary>Cross Compilation with QIRP SDK</summary>
+<details><summary>Start with QIRP SDK for QCLinux</summary>
 
 1. Set up the QIRP SDK environment: Refer to [QRB ROS Documents: Getting Started](https://qualcomm-qrb-ros.github.io/main/getting_started/environment_setup.html).
 
